@@ -6,8 +6,8 @@
 
 # Which feed list to read from the PRIVATE feeds repo.
 # Must match a file there: app_name "news" -> reads news.json
-app_name: "APP_NAME"
-feed_title: "APP TITLE"
+app_name: "races"
+feed_title: "races"
 
 # ---- Output ----
 output_html: false          # false = clean text (AI-rewritten/stripped)
@@ -17,8 +17,8 @@ max_output_items: 10000
 retention_days: 365
 
 # ---- This app's own Pages URL ----
-site_title: "My RSS Feed"
-site_base_url: "https://USERNAME.github.io/app-APPNAME"
+site_title: "races"
+site_base_url: "https://mtblq.github.io/app-races"
 
 # ---- Fetching ----
 fetch_workers: 12
@@ -36,8 +36,7 @@ translate_workers: 6
 translate_timeout: 90
 translate_max_retries: 2
 
-# The instruction this app's AI follows. Each app can differ.
-rewrite_prompt: |
+# The instruction this app's AI follows. Each app can differ.|
   rewrite_prompt: |
   You are rewriting cycling PODCAST episode items. If the text is not
   in English, translate it to English first, then rewrite the title and
